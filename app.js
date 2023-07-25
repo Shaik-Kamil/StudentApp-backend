@@ -14,7 +14,7 @@ app.get('/', (request, response) => {
 //   response.json({ success: true });
 // });
 
-// app.get('*', (req, res) => {
-//   res.status(404).send('Page does not exist');
-// });
+app.get('*', (req, res) => {
+  res.status(404).send('Page does not exist');
+});
 module.exports = app;
